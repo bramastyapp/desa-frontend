@@ -34,6 +34,7 @@ import SlidersIndex from "../views/Admin/Sliders/Index";
 import AparatursIndex from "../views/Admin/Aparaturs/Index";
 import AparatursCreate from "../views/Admin/Aparaturs/Create";
 import AparatursEdit from "../views/Admin/Aparaturs/Edit";
+import Home from "../views/Web/Home/Index";
 
 export default function RoutesIndex() {
   return (
@@ -293,6 +294,9 @@ export default function RoutesIndex() {
           </PrivateRoutes>
         }
       />
+
+      {/* route "/" */}
+      <Route path="/" element={<Home />} />
     </Routes>
   );
 }
