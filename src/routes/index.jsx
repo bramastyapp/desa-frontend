@@ -36,6 +36,8 @@ import AparatursCreate from "../views/Admin/Aparaturs/Create";
 import AparatursEdit from "../views/Admin/Aparaturs/Edit";
 import Home from "../views/Web/Home/Index";
 import WebAparatursIndex from "../views/Web/Aparaturs/Index";
+import WebPagesIndex from "../views/Web/Pages/Index";
+import WebPagesShow from "../views/Web/Pages/Show";
 
 export default function RoutesIndex() {
   return (
@@ -301,6 +303,12 @@ export default function RoutesIndex() {
 
       {/* route "/aparaturs" */}
       <Route path="/aparaturs" element={<WebAparatursIndex />} />
+
+      {/* route "/pages" */}
+      <Route path="/pages" element={<WebPagesIndex />} />
+
+      {/* route "/pages/:slug" */}
+      <Route path="/pages/:slug" element={<WebPagesShow />} />
     </Routes>
   );
 }
